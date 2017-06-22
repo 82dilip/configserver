@@ -1,19 +1,18 @@
 server:
   port: 8888
-
 management:
   context-path: /admin
   
 logging:
   level:
-    com.netflix.discovery: 'OFF'
+    com.netflix.discovery: 'DEBUG'
     org.springframework.cloud: 'DEBUG'
     
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    statusPageUrlPath: /admin/info
-    healthCheckUrlPath: /admin/health
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#    statusPageUrlPath: /admin/info
+#    healthCheckUrlPath: /admin/health
 
 spring:
   cloud:
@@ -22,6 +21,9 @@ spring:
         git:
           uri: https://github.com/spring-cloud-samples/config-repo
           basedir: target/config
+#the name of the file in appliation
+#  config:
+#    name: 
 
 ---
 spring:
