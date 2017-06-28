@@ -19,9 +19,11 @@ spring:
     config:
       server:
         git:
-#          uri: https://github.com/spring-cloud-samples/config-repo
-          uri: https://github.com/82dilip/configserver
-          basedir: target/config
+#          uri: https://github.com/82dilip/config-repo
+#          basedir: target/config
+          uri: file:///D:\\Cloud\\config-repo
+#uri: https://github.com/spring-cloud-samples/config-repo
+          
 #the name of the file in appliation
 #  config:
 #    name: 
